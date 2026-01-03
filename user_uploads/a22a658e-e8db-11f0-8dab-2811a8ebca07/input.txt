@@ -1,0 +1,8 @@
+file '20231225_160414-768x483.jpg'
+duration 1
+file '20231225_160414-768x483.jpg'
+duration 1
+file 'IMG_20230818_194925.jpg'
+duration 1
+file 'IMG_20230220_153242.jpg'
+duration 1

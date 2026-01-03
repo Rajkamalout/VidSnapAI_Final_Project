@@ -1,0 +1,10 @@
+file '20230813_230204-768x534.jpg'
+duration 1
+file 'Pi7_Passport_Photo (1)-fotor-enhance-202403209385.png'
+duration 1
+file 'Screenshot_20230102_191807.jpg'
+duration 1
+file 'IMG_20240414_004751.jpg'
+duration 1
+file 'IMG_20240107_233002.jpg'
+duration 1

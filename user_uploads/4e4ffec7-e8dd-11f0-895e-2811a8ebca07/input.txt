@@ -1,0 +1,12 @@
+file 'IMG_20240414_004751.jpg'
+duration 1
+file 'Screenshot_20230124_083440.jpg'
+duration 1
+file 'IMG_20230110_051246.jpg'
+duration 1
+file 'IMG_20230114_215753.jpg'
+duration 1
+file 'IMG_20230114_215803.jpg'
+duration 1
+file 'IMG_20230127_101054.jpg'
+duration 1
