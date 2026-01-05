@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Register - VidSnapAI{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card mx-auto p-4" style="max-width:400px;">
+    <h3 class="text-center mb-3">Register</h3>
+
+    <input id="regName" class="form-control mb-2" placeholder="Name">
+    <input id="regEmail" class="form-control mb-2" placeholder="Email">
+    <input id="regPassword" type="password" class="form-control mb-3" placeholder="Password">
+
+    <button class="btn btn-primary w-100" onclick="register()">Register</button>
+
+    <p class="text-center mt-3">
+      Already have account? <a href="/login">Login</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='auth.js') }}"></script>
+{% endblock %}

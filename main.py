@@ -45,11 +45,34 @@ def create():
                 f.write(f"file '{fl}'\nduration 1\n")
 
     return render_template("create.html", myid=myid)
+@app.route("/home")
+def dashboard():
+    return render_template("index.html")
+
 
 @app.route("/gallery")
 def gallery():
     reels = os.listdir("static/reels")
     return render_template("gallery.html", reels=reels)
+
+@app.route("/login")
+def login():
+    return render_template("auth/login.html")
+
+@app.route("/register")
+def register():
+    return render_template("auth/register.html")
+
+@app.before_request
+def check_login():
+    allowed = ["/login", "/register", "/"]
+    if request.path.startswith("/static"):
+        return
+
+    if request.path not in allowed:
+        return
+
+
 
 # 🔴 NEW ROUTE – DELETE REEL
 @app.route("/delete_reel/<reel_name>", methods=["POST"])
