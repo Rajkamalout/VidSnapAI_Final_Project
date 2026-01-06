@@ -45,5 +45,3 @@ def text_to_speech_file(text: str, folder: str) -> str:
     # Return the path of the saved audio file
     return save_file_path
 
-
-# text_to_speech_file("Hey I am a good boy and its the python course", "ac9a7034-2bf9-11f0-b9c0-ad551e1c593a")

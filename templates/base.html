@@ -23,10 +23,14 @@
 
   <body>
     <!-- ✅ NAVBAR START -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark vidsnap-navbar sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="/">VidSnapAI</a>
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="/">
+          <i class="fa-solid fa-video me-2"></i> VidSnapAI
+        </a>
 
+        <!-- Mobile toggle -->
         <button
           class="navbar-toggler"
           type="button"
@@ -36,27 +40,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
             <li class="nav-item">
-              <a class="nav-link" href="/create">Create</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/gallery">Gallery</a>
+              <a class="nav-link nav-link-custom" href="/home">Home</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/create">Create</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="/gallery"
+                >Gallery</a
+              >
+            </li>
+
+            <!-- Login -->
             <li class="nav-item" id="loginBtn">
-              <a class="nav-link" href="/login">Login</a>
+              <a class="btn btn-outline-light px-3" href="/login">Login</a>
             </li>
 
+            <!-- Logout -->
             <li class="nav-item d-none" id="logoutBtn">
-              <a class="nav-link" href="#" onclick="logout()">Logout</a>
+              <a class="btn btn-danger px-3" href="#" onclick="logout()"
+                >Logout</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- ✅ NAVBAR END -->
 
     <div class="main-content">{% block content %}{% endblock %}</div>

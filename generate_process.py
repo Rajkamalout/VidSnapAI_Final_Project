@@ -33,3 +33,6 @@ if __name__ == "__main__":
                 with open("done.txt", "a") as f:
                     f.write(folder + "\n")
         time.sleep(4)
+#         Welcome to VidSnapAI.
+# This reel is created using AI technology.
+# Thank you for watching.
