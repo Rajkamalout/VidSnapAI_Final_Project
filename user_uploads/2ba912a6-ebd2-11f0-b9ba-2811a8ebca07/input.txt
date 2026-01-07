@@ -1,0 +1,12 @@
+file 'Snapchat-64127104.jpg'
+duration 1
+file 'Snapchat-545635612.jpg'
+duration 1
+file 'Snapchat-646045580.jpg'
+duration 1
+file 'Snapchat-502365390.jpg'
+duration 1
+file 'Snapchat-545635612.jpg'
+duration 1
+file 'Snapchat-545635612.jpg'
+duration 1
