@@ -101,14 +101,14 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.navbar a,
+/* .navbar a,
 .navbar a.active,
 .navbar a::after,
 .navbar a.active::after {
   border: none !important;
   text-decoration: none !important;
   content: none !important;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
