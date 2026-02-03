@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Login - VidSnapAI{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height:90vh;">
+  <div class="card shadow-lg border-0 p-4" style="max-width:420px; width:100%; border-radius:16px;">
+    
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-success">VidSnapAI</h2>
+      <p class="text-muted mb-0">Login to your account</p>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+      <label for="loginEmail">Email address</label>
+    </div>
+
+    <div class="form-floating mb-4">
+      <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+      <label for="loginPassword">Password</label>
+    </div>
+
+    <button class="btn btn-success w-100 py-2 fw-semibold" onclick="login()">
+      Login
+    </button>
+
+    <p class="text-center mt-3 mb-0">
+      New user? <a href="/register" class="text-decoration-none fw-semibold">Create account</a>
+    </p>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='auth.js') }}"></script>
+{% endblock %}
